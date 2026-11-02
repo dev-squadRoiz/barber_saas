@@ -68,7 +68,7 @@ async function carregarPainelSaaS() {
         // Configura link da página pública do salão
         const linkPublico = document.getElementById('linkPaginaPublica');
         if (linkPublico) {
-            linkPublico.href = `index.html?salao=${encodeURIComponent(barbearia.slug)}`;
+            linkPublico.href = `agendar.html?salao=${encodeURIComponent(barbearia.slug)}`;
             linkPublico.style.display = 'inline-flex';
         }
 
@@ -161,7 +161,7 @@ function renderizarAgendamentos() {
                 <i class="far fa-calendar-times"></i>
                 <h3>Nenhum agendamento por aqui</h3>
                 <p style="margin-bottom: 20px;">${mensagemFiltro}</p>
-                <a href="index.html?salao=${encodeURIComponent(barbeariaAtual.slug)}" target="_blank" class="btn btn-outline-gold btn-sm">
+                <a href="agendar.html?salao=${encodeURIComponent(barbeariaAtual.slug)}" target="_blank" class="btn btn-outline-gold btn-sm">
                     <i class="fas fa-external-link-alt"></i> Acessar Link do Salão
                 </a>
             </div>
